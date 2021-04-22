@@ -1,0 +1,87 @@
+body {
+    font-family: "Raleway", arial, sans-serif;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.logo {
+    padding: 1em;
+}
+/* ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+} */
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+}
+nav li {
+    text-align: center;
+
+    margin-right: -0.2em;
+    margin-left: -0.2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inscription {
+    font-weight: bold;
+    color: #0065fc;
+}
+
+@media screen and (max-device-width: 768px) {
+    /* Règles CSS pour les mobiles ici */
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        justify-content: flex-start;
+        width: auto;
+    }
+    nav li {
+        margin: 0;
+    }
+    /* ul {
+        display: flex;
+
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 500px;
+    } */
+
+    nav {
+        display: block;
+    }
+
+    .inscription {
+        position: absolute;
+        top: 2em;
+        right: 1em;
+    }
+
+    .anchor {
+        width: 50%;
+        border-bottom: solid 3px #f2f2f2;
+        padding-bottom: 1em;
+    }
+    .anchor:hover {
+        border-bottom: solid 3px #0065fc;
+        color: #0065fc;
+    }
+}
