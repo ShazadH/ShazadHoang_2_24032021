@@ -5,9 +5,6 @@ body {
     margin: auto;
 }
 
-.logo {
-    padding: 1em;
-}
 /* ul {
     display: flex;
     justify-content: space-around;
@@ -17,6 +14,10 @@ body {
     padding: 0;
     width: 500px;
 } */
+
+.logo {
+    padding: 1em;
+}
 
 nav ul {
     list-style-type: none;
