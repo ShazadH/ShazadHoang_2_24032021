@@ -104,6 +104,7 @@ Search box start
 input {
     font-size: 1.1em;
     border: none;
+    font-family: "Raleway";
 }
 
 .formInput::placeholder {
@@ -174,6 +175,7 @@ Filters start
     font-weight: bold;
     font-size: 1.5em;
     padding-bottom: 1em;
+    margin-right: 1.5em;
 }
 
 .filter {
@@ -220,8 +222,9 @@ Filters start
 .filterInfo {
     display: flex;
     align-items: center;
-    margin: 1em 0 2em 0;
+    padding: 1em;
 }
+
 .filterInfoIcon {
     height: 2em;
     width: 2em;
@@ -234,9 +237,11 @@ Filters start
     justify-content: center;
     margin-right: 1em;
 }
+
 .filterInfoIconIcon {
     color: #0065fc;
 }
+
 .filterInfoText {
     margin: 0;
 }
