@@ -1,8 +1,76 @@
+/* Hosting Section */
+
+.hosting-section {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 3fr 6fr;
+}
+
+@media screen and (max-device-width: 768px) {
+    .hosting-section {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+}
+
+/* Hosting Section */
+
+/* Aside */
+
+.most-popular {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-rows: auto repeat(3, 1fr);
+    background-color: #f2f2f2;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.popular-thumbnail-card {
+    margin-top: 1rem;
+    padding: 7px;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.popular-thumbnail-card-a {
+    display: flex;
+    height: 100%;
+}
+
+.div-img {
+    position: relative;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    width: 40%;
+    min-width: 40%;
+    max-width: 40%;
+}
+
+/* .popular-thumbnail-card-image {
+    object-fit: cover;
+    max-width: 40%;
+    max-height: 100%;
+    border-radius: 1rem 0 0 1rem;
+    position: absolute;
+} */
+
+.popular-thumbnail-card-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 1rem 0 0 1rem;
+    position: absolute;
+}
+
 @media screen and (max-device-width: 768px) {
     .most-popular {
-        background-color: #f2f2f2;
-        height: auto;
-        width: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(3, 1fr);
     }
 
     .popular-thumbnail-card-image {
@@ -13,21 +81,32 @@
     }
 }
 
-.popular-thumbnail-card-image {
-    object-fit: cover;
-    max-width: 40%;
-    max-height: 100%;
-    border-radius: 1rem 0 0 1rem;
+/* Aside */
+
+/* Hosting */
+
+/* Hosting */
+
+.popular-thumbnail-card-text-container {
+    margin-left: 2rem;
 }
 
-.popular-thumbnail-card {
-    margin-top: 1rem;
-    padding: 7px;
-    background-color: white;
-    border-radius: 1rem;
+.popular-thumbnail-card-text-title {
+    margin: 0;
 }
-.popular-thumbnail-card-a {
-    display: flex;
+
+.popular-thumbnail-card-text-price {
+    margin: 0.5rem 0 0 0;
+}
+
+.popular-thumbnail-card-text-note {
+    margin: 3rem 0 0 0;
+    color: #0065fc;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
 }
 
 .most-popular {
@@ -45,15 +124,6 @@
     justify-content: space-between;
     align-items: center;
     text-transform: capitalize;
-}
-
-.hosting-section {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    max-width: 1920px;
-    width: auto;
-    border: 1px solid black;
 }
 
 .hosting-thumbnail {
