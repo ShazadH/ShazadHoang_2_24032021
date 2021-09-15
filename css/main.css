@@ -1,9 +1,9 @@
 /* Hosting Section */
-
 .hosting-section {
     display: grid;
     column-gap: 2rem;
     grid-template-columns: 3fr 6fr;
+    height: auto;
 }
 
 a {
@@ -95,10 +95,18 @@ ul {
     color: #0065fc;
 }
 
+.star[data-active="true"] {
+    color: #0065fc;
+}
+.star[data-active="false"] {
+    color: #d2caca;
+}
+
 @media screen and (max-device-width: 768px) {
     .most-popular {
         grid-template-columns: 1fr;
         grid-template-rows: auto repeat(3, 1fr);
+        border-radius: 0em;
     }
 
     .popular-thumbnail-card-image {
@@ -114,16 +122,49 @@ ul {
 /* Hosting */
 
 .hosting {
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1.5rem;
+    height: auto;
+    padding: 1rem;
+    background-color: #f2f2f2;
 }
 
-.hosting-thumbnail {
+.hosting-thumbnail-card-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
     width: auto;
     max-width: 1920px;
-    width: auto;
-    border: 1px solid black;
+}
+
+.hosting-thumbnail-card {
+    display: block;
+    width: 28%;
+    height: fit-content;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 20px #0000001f;
+    padding: 7px;
+    background-color: white;
+}
+
+.hosting-thumbnail-card-div-img {
+    position: relative;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 55%;
+    min-height: 55%;
+    max-height: 55%;
+}
+
+.hosting-thumbnail-card-text-note {
+    color: #0065fc;
 }
 
 .responsive {
@@ -133,6 +174,34 @@ ul {
     width: 100%;
     max-height: 100%;
     border-radius: 1rem 1rem 0 0;
+}
+
+.hosting-title {
+    padding: 7px;
+    margin: 1rem;
+}
+
+.showmore-link {
+    font-weight: bold;
+    padding: 7px;
+    margin: 1rem;
+}
+
+@media screen and (max-device-width: 768px) {
+    .hosting {
+        border-radius: 0em;
+        background-color: white;
+    }
+
+    .hosting-thumbnail-card-container {
+        flex-direction: column;
+        justify-content: start;
+        align-content: space-between;
+    }
+
+    .hosting-thumbnail-card {
+        width: 90%;
+    }
 }
 
 /* Hosting */
