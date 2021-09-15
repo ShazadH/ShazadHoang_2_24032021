@@ -4,6 +4,13 @@ body {
     height: auto;
     margin: auto;
     max-width: 1920px;
+    padding: 0 2rem 0 2rem;
+}
+
+@media screen and (max-device-width: 768px) {
+    body {
+        padding: 0rem;
+    }
 }
 
 .logo {
