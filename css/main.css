@@ -164,12 +164,30 @@ ul {
     max-height: 55%;
 }
 
+.hosting-thumbnail-card-text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.hosting-thumbnail-card-text-container > h3 {
+    margin: 0em;
+}
+
+.hosting-thumbnail-card-text-container > p {
+    margin: 0.5em 0 0 0;
+}
+
+.hosting-thumbnail-card-text-container > ul {
+    margin: 0.5em 0 0 0;
+}
+
 .hosting-thumbnail-card-text-note {
     color: #0065fc;
 }
 
 .responsive {
-    height: 7rem;
+    height: 8rem;
     object-fit: cover;
     max-width: 100%;
     width: 100%;
