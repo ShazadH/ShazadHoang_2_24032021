@@ -1,7 +1,5 @@
 body {
     font-family: "Raleway", arial, sans-serif;
-    width: 100%;
-    height: auto;
     margin: auto;
     max-width: 1920px;
     padding: 0 2rem 0 2rem;
@@ -172,7 +170,6 @@ Filters start
 .filtersSections {
     display: flex;
     justify-content: space-around;
-    width: 100%;
     padding: 1em;
 }
 .filterTitle {
