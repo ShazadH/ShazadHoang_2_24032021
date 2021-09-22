@@ -237,6 +237,7 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .activity-section-card-container h3 {
@@ -251,7 +252,7 @@ ul {
     height: 500px;
     width: 22%;
     border-radius: 15px;
-    margin: 10px 0 10px 0;
+    margin: 1rem 0;
     box-shadow: 0 0 20px #0000001f;
 }
 
@@ -269,7 +270,7 @@ ul {
     width: 22%;
     height: 500px;
     border-radius: 15px;
-    margin: 10px 46px 10px 46px;
+    margin: 1rem 3rem;
 }
 
 .linkImgActivity2 {
@@ -312,7 +313,7 @@ ul {
     height: 500px;
     width: 22%;
     border-radius: 15px;
-    margin: 10px 0 10px 0;
+    margin: 1rem 0;
     box-shadow: 0 0 20px #0000001f;
 }
 
@@ -330,7 +331,7 @@ ul {
     width: 22%;
     height: 500px;
     border-radius: 15px;
-    margin: 10px 0px 10px 46px;
+    margin: 1rem 0 1rem 3rem;
 }
 
 .linkImgActivity5 {
@@ -374,6 +375,17 @@ ul {
 
     .activity-section-card-container a,
     .activity-section-card-container div {
+        width: 90%;
+    }
+
+    .activity-section-card-container div a {
         width: 100%;
+    }
+
+    .col1,
+    .col2,
+    .col3,
+    .col4 {
+        margin: 1rem;
     }
 }
