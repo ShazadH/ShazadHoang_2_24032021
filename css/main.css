@@ -80,6 +80,9 @@ ul {
 
 .popular-thumbnail-card-text-container {
     margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .popular-thumbnail-card-text-title {
@@ -215,7 +218,6 @@ ul {
     .hosting-thumbnail-card-container {
         flex-direction: column;
         justify-content: start;
-        align-content: space-between;
     }
 
     .hosting-thumbnail-card {
@@ -387,6 +389,7 @@ ul {
         flex-direction: column;
         height: auto;
         padding: 1rem;
+        align-items: center;
     }
 
     .activity-section-card-container a,
