@@ -63,7 +63,7 @@ nav {
     .inscription {
         position: absolute;
         top: 2em;
-        right: -1em;
+        right: 0em;
     }
 
     .anchor {
